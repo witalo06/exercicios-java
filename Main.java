@@ -1,42 +1,28 @@
-package pesquisa;
+package Funcionario;
 
-/*
- * Nome: Misael Witalo Ferreira da Silva
- * RA: 0025369
- * Atividade 01 - Objetos
- */
-
-// Classe Aluno: é a estrutura que define como aluno será representado
-class Aluno {
-    // Atributos: características de cada aluno
-    String nome;
-    int idade;
-    String curso;
- 
-    // Método que mostra os dados do aluno na tela
-    void apresentar() {
-        System.out.println("Nome: " + nome + " | Idade: " + idade + " | Curso: " + curso);
-    }
-}
 public class Main {
-    public static void main(String[] args) {
-        // Primeiro objeto da classe Aluno com a palavra new
-        Aluno aluno1 = new Aluno();
-        aluno1.nome = "Ana";
-        aluno1.idade = 20;
-        aluno1.curso = "TI";
- 
-        // Segundo objeto: é outro aluno que ocupa outro espaço na memória
-        Aluno aluno2 = new Aluno();
-        aluno2.nome = "Bruno";
-        aluno2.idade = 22;
-        aluno2.curso = "TI";
- 
-        // Cada objeto guarda seus próprios dados
-        aluno1.apresentar();
-        aluno2.apresentar();
- 
-        // Esse símbolo == compara se as duas variáveis apontam para o mesmo objeto
-        System.out.println("aluno1 e aluno2 sao o mesmo objeto? " + (aluno1 == aluno2));
-    }
-}
+	
+	 public static void main(String[] args){
+	   Funcionario f1 = new Funcionario();
+	   f1.setNome(" Godofredo ");
+	   f1.setIdade(44);
+	   f1.setCargo(" Analista de Requisitos ");
+	   f1.setMatricula(104);
+
+	   Funcionario f2 = new Funcionario(" Estela ", 25);
+	   f2.setCargo(" Suporte ");
+	   f2.setSalario(2000);
+	   f2.setMatricula(105);
+
+	   Funcionario f3 = new Funcionario(106, " Josivaldo ", 3500);
+	   f3.setCargo(" Gerente ");
+	   f3.setIdade(48);
+
+ System.out.println(f1.getNome() + " - R$" + f1.getSalario());
+ System.out.println(f2.getNome() + " - " + f2.getIdade() + " anos");
+ System.out.println(f3.getNome() + " - Matricula: " + f3.getMatricula() + " - R$" + f1.getSalario());
+	   
+	 }
+	}
+
+
