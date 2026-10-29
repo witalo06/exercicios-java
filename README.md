@@ -1,4 +1,4 @@
-## Exercícios em Java
+# Exercícios em Java
 
 Este repositório contém um conjunto de atividades e exercícios práticos com foco na aprendizagem da Linguagem de Programação **Java** e pilares da **POO**
 
